@@ -20,15 +20,15 @@
         class="font-manrope bg-Light-Grayish-Blue min-h-screen flex items-center justify-center"
     >
         <main class="w-8/10 my-8 max-w-3xl">
-            <div class="bg-white rounded-lg shadow-lg md:flex">
+            <div class="bg-white rounded-lg shadow-lg lg:flex">
                 <img
                     src="images/drawers.jpg"
                     alt=""
-                    class="rounded-t-lg md:w-5/10 lg:w-4/10 md:rounded-l-lg md:rounded-tr-none"
+                    class="rounded-t-lg lg:w-4/10 lg:rounded-l-lg lg:rounded-tr-none w-full"
                 />
 
-                <div class="md:p-8">
-                    <div class="w-8/10 mx-auto md:w-full">
+                <div class="lg:p-8">
+                    <div class="w-8/10 mx-auto lg:w-full">
                         <h1
                             class="my-4 text-base font-extrabold text-Very-Dark-Grayish-Blue"
                         >
@@ -43,13 +43,17 @@
                         </p>
                     </div>
 
-                    <div class="py-4 rounded-b-lg md:py-0">
+                    <div
+                        class="py-4 rounded-b-lg lg:py-0 lg:relative js-share-section lg:bg-white"
+                    >
                         <div
-                            class="flex items-center justify-between w-8/10 mx-auto md:w-full"
+                            class="flex items-center justify-between w-8/10 mx-auto lg:w-full transition delay-150 duration-300 ease-in-out"
                         >
-                            <div class="gap-4 items-center hidden">
+                            <div
+                                class="py-2 gap-4 items-center lg:bg-Very-Dark-Grayish-Blue lg:justify-around lg:w-[240px] lg:py-4 lg:px-8 lg:rounded-lg lg:shadow-lg lg:absolute lg:bottom-12 lg:left-66 hidden js-social-links"
+                            >
                                 <p
-                                    class="text-sm tracking-widest text-Light-Grayish-Blue font-light"
+                                    class="text-sm tracking-[.4rem] text-Light-Grayish-Blue font-light"
                                 >
                                     SHARE
                                 </p>
@@ -68,9 +72,15 @@
                                     alt=""
                                     class="h-4"
                                 />
+
+                                <div
+                                    class="absolute top-10 size-4 rotate-45 bg-Very-Dark-Grayish-Blue hidden lg:block js-social-links"
+                                ></div>
                             </div>
 
-                            <div class="flex items-center gap-4">
+                            <div
+                                class="flex items-center gap-4 js-profile-section lg:flex"
+                            >
                                 <img
                                     src="images/avatar-michelle.jpg"
                                     alt=""
@@ -92,12 +102,14 @@
                             <img
                                 src="images/icon-share.svg"
                                 alt=""
-                                class="bg-Light-Grayish-Blue h-7 w-7 p-2 rounded-full"
+                                class="bg-Light-Grayish-Blue h-7 w-7 p-2 rounded-full js-share-btn cursor-pointer"
                             />
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+
+        <script src="script/script.js"></script>
     </body>
 </html>
