@@ -1,115 +1,107 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-        <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
 
-        <title>Frontend Mentor | Article preview component</title>
-    </head>
-    <body
-        class="font-manrope bg-Light-Grayish-Blue min-h-screen flex items-center justify-center"
-    >
-        <main class="w-8/10 my-8 max-w-3xl">
-            <div class="bg-white rounded-lg shadow-lg lg:flex">
-                <img
-                    src="images/drawers.jpg"
-                    alt=""
-                    class="rounded-t-lg lg:w-4/10 lg:rounded-l-lg lg:rounded-tr-none w-full"
-                />
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body
+    class="font-manrope bg-Light-Grayish-Blue flex min-h-screen items-center justify-center"
+  >
+    <main class="w-9/10 max-w-2xl">
+      <div class="rounded-lg bg-white shadow-lg md:flex">
+        <div class="overflow-hidden md:w-4/10">
+          <img
+            src="images/drawers.jpg"
+            alt=""
+            class="h-full w-full rounded-t-lg object-cover delay-100 duration-300 ease-in-out md:rounded-l-lg md:rounded-tr-none md:hover:scale-110"
+          />
+        </div>
 
-                <div class="lg:p-8">
-                    <div class="w-8/10 mx-auto lg:w-full">
-                        <h1
-                            class="my-4 text-base font-extrabold text-Very-Dark-Grayish-Blue"
-                        >
-                            Shift the overall look and feel by adding these
-                            wonderful touches to furniture in your home
-                        </h1>
-                        <p class="text-sm text-Desaturated-Dark-Blue my-4">
-                            Ever been in a room and felt like something was
-                            missing? Perhaps it felt slightly bare and
-                            uninviting. I’ve got some simple tips to help you
-                            make any room feel complete.
-                        </p>
-                    </div>
+        <div class="relative p-8 pb-0 md:w-6/10">
+          <h1 class="text-Very-Dark-Grayish-Blue text-lg font-extrabold">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
 
-                    <div
-                        class="py-4 rounded-b-lg lg:py-0 lg:relative js-share-section lg:bg-white"
-                    >
-                        <div
-                            class="flex items-center justify-between w-8/10 mx-auto lg:w-full transition delay-150 duration-300 ease-in-out"
-                        >
-                            <div
-                                class="py-2 gap-4 items-center lg:bg-Very-Dark-Grayish-Blue lg:justify-around lg:w-[240px] lg:py-4 lg:px-8 lg:rounded-lg lg:shadow-lg lg:absolute lg:bottom-12 lg:left-66 hidden js-social-links"
-                            >
-                                <p
-                                    class="text-sm tracking-[.4rem] text-Light-Grayish-Blue font-light"
-                                >
-                                    SHARE
-                                </p>
-                                <img
-                                    src="images/icon-facebook.svg"
-                                    alt=""
-                                    class="h-4"
-                                />
-                                <img
-                                    src="images/icon-twitter.svg"
-                                    alt=""
-                                    class="h-4"
-                                />
-                                <img
-                                    src="images/icon-pinterest.svg"
-                                    alt=""
-                                    class="h-4"
-                                />
+          <p class="text-Desaturated-Dark-Blue my-4 text-xs">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
 
-                                <div
-                                    class="absolute top-10 size-4 rotate-45 bg-Very-Dark-Grayish-Blue hidden lg:block js-social-links"
-                                ></div>
-                            </div>
-
-                            <div
-                                class="flex items-center gap-4 js-profile-section lg:flex"
-                            >
-                                <img
-                                    src="images/avatar-michelle.jpg"
-                                    alt=""
-                                    class="w-8 rounded-full"
-                                />
-                                <div>
-                                    <p
-                                        class="text-sm font-extrabold text-Very-Dark-Grayish-Blue"
-                                    >
-                                        Michelle Appleton
-                                    </p>
-                                    <p
-                                        class="text-sm text-Desaturated-Dark-Blue"
-                                    >
-                                        28 Jun 2020
-                                    </p>
-                                </div>
-                            </div>
-                            <img
-                                src="images/icon-share.svg"
-                                alt=""
-                                class="bg-Light-Grayish-Blue h-7 w-7 p-2 rounded-full js-share-btn cursor-pointer"
-                            />
-                        </div>
-                    </div>
-                </div>
+          <div class="mt-8 flex items-center justify-between pb-4">
+            <div class="flex items-center gap-4">
+              <img
+                src="images/avatar-michelle.jpg"
+                alt=""
+                class="size-8 rounded-full"
+              />
+              <div>
+                <p class="text-Very-Dark-Grayish-Blue text-xs font-extrabold">
+                  Michelle Appleton
+                </p>
+                <p class="text-Desaturated-Dark-Blue text-xs">28 Jun 2020</p>
+              </div>
             </div>
-        </main>
+            <div class="z-1">
+              <img
+                src="images/icon-share.svg"
+                alt=""
+                class="bg-Light-Grayish-Blue js-share-btn size-8 cursor-pointer rounded-full p-2.5 duration-300 ease-in-out md:hover:scale-110"
+              />
+            </div>
 
-        <script src="script/script.js"></script>
-    </body>
+            <!-- JS bottom-0 -->
+            <div
+              class="bg-Very-Dark-Grayish-Blue js-share-popup absolute bottom-0 left-0 flex w-full items-center gap-4 rounded-b-lg p-5 opacity-0 shadow-lg transition-all ease-in-out md:bottom-15 md:left-63 md:w-1/2 md:rounded-lg"
+            >
+              <p
+                class="text-Light-Grayish-Blue text-xs tracking-[.5rem] uppercase"
+              >
+                share
+              </p>
+              <a href="#"
+                ><img
+                  src="images/icon-facebook.svg"
+                  alt=""
+                  class="transition-all ease-in-out md:hover:scale-115"
+              /></a>
+              <a href="#">
+                <img
+                  src="images/icon-twitter.svg"
+                  alt=""
+                  class="transition-all ease-in-out md:hover:scale-115"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/icon-pinterest.svg"
+                  alt=""
+                  class="transition-all ease-in-out md:hover:scale-115"
+                />
+              </a>
+
+              <div
+                class="bg-Very-Dark-Grayish-Blue js-share-popup absolute -bottom-2 left-24 hidden size-4 rotate-45 opacity-0 transition-all ease-in-out md:block"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script/script.js"></script>
+  </body>
 </html>
