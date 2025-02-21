@@ -3,10 +3,15 @@
 @import "tailwindcss";
 
 @theme {
-    --font-manrope: "Manrope", serif;
+  --font-manrope: "Manrope", serif;
 
-    --color-Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
-    --color-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
-    --color-Grayish-Blue: hsl(212, 23%, 69%);
-    --color-Light-Grayish-Blue: hsl(210, 46%, 95%);
+  --color-Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --color-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --color-Grayish-Blue: hsl(212, 23%, 69%);
+  --color-Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+  --color-dark-mode-bg: #0d1b2a;
+  --color-dark-mode-card: #1b263b;
+  --color-dark-mode-font: #778da9;
+  --color-dark-mode-heading: #e0e1dd;
 }
